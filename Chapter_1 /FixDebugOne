@@ -1,0 +1,27 @@
+public class FixDebug One
+{
+   /* This program displays a greeting */
+   public static void Main(String args)   
+   {
+      Systm.out.println("Hello World!")         
+   }
+
+/*
+
+Bugs:
+1.The class name is wrong. It has a space FixDebug One. It should be FixDebugOne.
+
+
+2.The main method is wrong. It is written as Main(String args). The correct one is main(String[] args).
+
+
+3.There is a spelling mistake. It says Systm.out.println. It should be System.out.println.
+
+
+4. Missing semicolon after println. 
+
+
+5. Missing closing curly brace } for the class. 
+
+
+*/
