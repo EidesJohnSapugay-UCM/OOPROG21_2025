@@ -1,0 +1,12 @@
+public class DemoGrossPay {
+
+    public static void calculateGross(double hoursWorked) {
+        double hourlyRate = 22.75;
+        double grossPay = hoursWorked * hourlyRate;
+        System.out.printf("Gross pay for %.2f hours is $%.2f%n", hoursWorked, grossPay);
+    }
+
+    public static void main(String[] args) {
+        calculateGross(40);
+    }
+}
