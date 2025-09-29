@@ -1,12 +1,8 @@
-public class DebugBox { 
-    private int width;
-    private int length;
-    private int height;
-
-    public DebugBox() {
-        length = 1;
-        width = 1;
-        height = 1;
+public class DebugBox {
+    private int width, length, height;
+    
+      public DebugBox() {
+        width = length = height = 1;
     }
 
     public DebugBox(int width, int length, int height) {
@@ -18,20 +14,20 @@ public class DebugBox {
     public void showData() {
         System.out.println("Width: " + width + " Length: " + length + " Height: " + height);
     }
-
+    
     public double getVolume() {
-        double vol = length * width * height;
-        return vol;
+        return width * length * height;
     }
-
+    
     public static void main(String[] args) {
-        DebugBox box1 = new DebugBox();
-        DebugBox box2 = new DebugBox(3, 4, 5);
-
-        box1.showData();
-        System.out.println("Volume: " + box1.getVolume());
-
-        box2.showData();
-        System.out.println("Volume: " + box2.getVolume());
+        DebugBox b1 = new DebugBox();
+        b1.showData();
+        System.out.println("Volume: " + b1.getVolume());
+        
+        
+        DebugBox b2 = new DebugBox(3, 4, 5);
+        b2.showData();
+        System.out.println("Volume: " + b2.getVolume());
     }
 }
+      }
