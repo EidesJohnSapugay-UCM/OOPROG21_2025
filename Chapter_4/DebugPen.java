@@ -2,13 +2,15 @@ public class DebugPen {
     private String color;
     private String point;
 
+   
     public DebugPen() {
         color = "black";
         point = "fine";
     }
 
+    
     public DebugPen(String color, String point) {
-        this.color = color;
+        this.color = color; 
         this.point = point;
     }
 
@@ -18,16 +20,5 @@ public class DebugPen {
 
     public String getPoint() {
         return point;
-    }
-
-    public static void main(String[] args) {
-        DebugPen pen1 = new DebugPen();
-        DebugPen pen2 = new DebugPen("blue", "medium");
-
-        System.out.println("Pen1 Color: " + pen1.getColor());
-        System.out.println("Pen1 Point: " + pen1.getPoint());
-
-        System.out.println("Pen2 Color: " + pen2.getColor());
-        System.out.println("Pen2 Point: " + pen2.getPoint());
     }
 }
